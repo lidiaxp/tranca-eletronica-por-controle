@@ -17,7 +17,7 @@ void setup()
 
 void loop() {
   if (irrecv.decode(&results)) {
-    Serial.println(results.value, HEX);  
+    //Serial.println(results.value, HEX);  
     valor = (results.value);
     if (valor == 0xC9767F76) {  
       putSenha(1);
